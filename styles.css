@@ -13,6 +13,7 @@
   --neptuneblue: #2D68F0;
   --antonio: 'Antonio', sans-serif;
   --spartan: 'Spartan', sans-serif;
+  --spartanP: 'Spartan', sans-serif;
 }
 
 * {
@@ -27,6 +28,13 @@ body {
     background-color: var(--background);
     color: var(--white);
 }
+
+
+
+
+/* NAV STYLES */
+
+
 
 .nav-container {
     width: 100%;
@@ -134,8 +142,8 @@ body {
     }
 
     .chevron {
-        display: inline;
-        float: right;
+        display: grid;
+        grid-template-columns: 0.1%;
         
     }
 
@@ -167,4 +175,55 @@ body {
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+
+/* OVERVIEW CONTENT */
+
+.o-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    padding: 10px;
+    height: 500px;
+}
+
+.content {
+    padding:10px;
+}
+
+.planet-name {
+    font-family: var(--antonio);
+    font-size: 50px;
+    line-height: 103px;
+    margin: 10px;
+    letter-spacing: 1.5px;
+}
+
+.content-info {
+    font-family: var(--spartanP);
+    font-weight: 500;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.source-info {
+    font-family: var(--spartanP);
+    font-weight: 500;
+    font-size: 14px;
+    margin: 10px;
+    opacity: .5;
+
+}
+
+.source-info a {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.source-icon {
+    margin-left: 5px;
 }
